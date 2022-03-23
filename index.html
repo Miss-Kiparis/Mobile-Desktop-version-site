@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./src/img/favicon.ico">
+    <link rel="stylesheet" href="./dist/css/">
+    <link rel="stylesheet" href="./dist/css/styles.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Homework 2</title>
+</head>
+
+<body class="page__body">
+
+    <header class="page__header">
+        <div class="header__container">
+            <nav class="page__header-nav nav__menu">
+                <a href="#" class="hamburger hamburger--collapse">
+                    <span class="hamburger-inner bar1"></span>
+                    <span class="hamburger-inner bar2"></span>
+                    <span class="hamburger-inner bar3"></span>
+                </a>
+
+                <ul class="nav__menu-drop menu" id="menu">
+                    <li class="menu__list"><a class="menu__link" href="#">Home</a></li>
+                    <li class="menu__list"><a class="menu__link" href="#">about us</a></li>
+                    <li class="menu__list"><a class="menu__link" href="#">our journal</a></li>
+                    <li class="menu__list"><a class="menu__link" href="#">projects</a></li>
+                    <li class="menu__list"><a class="menu__link" href="#">news</a></li>
+                    <li class="menu__list"><a class="menu__link" href="#">features</a></li>
+                    <li class="menu__list"><a class="menu__link" href="#">contact</a></li>
+                </ul>
+            </nav>
+
+            <picture>
+                <source srcset="./dist/img/intro-img-320.png" media="(max-width: 550px)">
+                <source srcset="./dist/img/intro-img-768.png" media="(max-width: 768px)">
+                <source srcset="./dist/img/intro-img-1200.png" media="(min-width: 769px)">
+                <img class="mobile-desktop" src="./dist/img/intro-img-1200.png" alt="intro-pic">
+            </picture>
+
+        </div>
+    </header>
+
+    <main class="page__main">
+        <section class="main__container">
+            <article>
+                <h1 class="title title--recent-post">- our Recent posts</h1>
+
+                <ul class="content">
+                    <li class="content__list">
+                        <img class="post post-1 " src="./dist/img/post-1.png" width="160"
+                            alt="Aenean Adipiscing Etiam Vestibulum">
+
+                        <div class="content__description">
+                            <a class="caption" href="#">Aenean Adipiscing Etiam Vestibulum</a>
+                            <p class="caption__comment">Photography, Journal / 9 Comments</p>
+                            <p class="post__info info">Etiam porta sem malesuada euismod. Aenean leo quam.
+                                Pellentesque ornare
+                                sem lacinia quam venenatis
+                                vestibulum.</p>
+
+                        </div>
+                    </li>
+                    <li class="content__list">
+
+                        <img class="post post-2 " src="./dist/img/post2.png" width="160"
+                            valt="Aenean Adipiscing Etiam Vestibulum">
+
+                        <div class="content__description">
+                            <a class="caption" href="#">Aenean Adipiscing Etiam Vestibulum</a>
+                            <p class="caption__comment">Photography, Journal / 9 Comments</p>
+                            <p class="post__info info">Etiam porta sem malesuada euismod. Aenean leo quam.
+                                Pellentesque ornare
+                                sem lacinia quam venenatis
+                                vestibulum.</p>
+                        </div>
+                    </li>
+
+                    <li class="content__list">
+                        <img class="post post-3 " src="./dist/img/post3.png" width="160"
+                            alt="Aenean Adipiscing Etiam Vestibulum">
+                        <div class="content__description">
+
+                            <a class="caption" href="#">Aenean Adipiscing Etiam Vestibulum</a>
+                            <p class="caption__comment">Photography, Journal / 9 Comments</p>
+                            <p class="post__info info">Etiam porta sem malesuada euismod. Aenean leo quam.
+                                Pellentesque ornare
+                                sem lacinia quam venenatis
+                                vestibulum.</p>
+                        </div>
+                    </li>
+                    <li class="content__list">
+                        <img class="post post-4 " src="./dist/img/post-4.png" width="160"
+                            alt="Aenean Adipiscing Etiam Vestibulum">
+                        <div class="content__description">
+                            <a class="caption caption4" href="#">Aenean Adipiscing Etiam Vestibulum</a>
+                            <p class="caption__comment caption__comment4">Photography, Journal / 9 Comments</p>
+                            <p class="post__info info">Etiam porta sem malesuada euismod. Aenean leo quam.
+                                Pellentesque ornare
+                                sem lacinia quam venenatis
+                                vestibulum.</p>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <article class="insta-posts insta">
+            <div class="insta__container">
+                <div class="insta__header">
+                    <h1 class="insta__title">- Last Instagram Shot</h1>
+                    <h1 class="insta__title--desktop">- Latest Instagram Shots</h1>
+                    <a class="insta__title--link" href="https://www.instagram.com/accounts/login/?hl=en">go to our
+                        instagram page -</a>
+                </div>
+                <ul class="insta__content">
+                    <li class="insta__content--list"> <img class="insta__item last__shot"
+                            src="./dist/img/insta-post.png" alt="Last Instagram Shot">
+                    </li>
+                    <li class="insta__content--list"> <img class="insta__item" src="./dist/img/insta-post2.png"
+                            alt="popular instagram picture">
+                    </li>
+                    <li class="insta__content--list"> <img class="insta__item" src="./dist/img/insta-post3.png"
+                            alt="popular instagram picture">
+                    </li>
+                    <li class="insta__content--list"> <img class="insta__item" src="./dist/img/insta-post4.png"
+                            alt="popular instagram picture">
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+    </main>
+    <footer class="page__footer">
+        <section class="container footer__container">
+            <h1 class="contact__title">- get in touch with us -</h1>
+            <p class="contact__description">Maecenas faucibus molli interdum. Cras mattis consectetur purus sitor amet
+                sed donec malesuada
+                ullamcorper odio. </p>
+            <ul class="socials__list">
+                <li class="socials__item"><a href="https://dashboard.rss.com/auth/sign-in/" class="socials__link"><img
+                            src="./dist/img/RSS.png" alt="social-media"></a></li>
+                <li class="socials__item"><a href="https://www.facebook.com/login/" class="socials__link"><img
+                            src="./dist/img/Facebook.png" alt="social-media"></a></li>
+                <li class="socials__item"><a
+                        href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"
+                        class="socials__link"><img src="./dist/img/Twitter.png" alt="social-media"></a></li>
+                <li class="socials__item"><a href="https://dribbble.com/tags/login" class="socials__link"><img
+                            src="./dist/img/Dribbble.png" alt="social-media"></a></li>
+                <li class="socials__item"><a href="https://www.pinterest.com/login/" class="socials__link"><img
+                            src="./dist/img/Pinterest.png" alt="social-media"></a></li>
+            </ul>
+            <address>
+                <p>Moonshine St. 14-05 Light City /
+                    <a href="tel:+00 (123) 456 78 90"> T. +00 (123) 456 78 90 / </a>
+                    <a href="mailto:first.last@email.com"> first.last@email.com</a>
+                </p>
+
+            </address>
+        </section>
+    </footer>
+    <script src="./dist/js/scripts.min.js"></script>
+</body>
+
+</html>

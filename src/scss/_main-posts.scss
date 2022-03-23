@@ -1,0 +1,145 @@
+.title {
+  @include posts-title;
+}
+
+.post {
+  width: 160px;
+  height: 140px;
+}
+
+.content {
+  padding: 0;
+  @media (min-width: 769px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  @media (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+}
+
+.content__list {
+  list-style: none;
+  @media (min-width: 769px) {
+    display: flex;
+    margin-bottom: 5%;
+
+    .content__description {
+      padding-left: 21px;
+      a {
+        margin: 0;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.caption {
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: $title-color;
+
+  @media (min-width: 769px) {
+  }
+}
+
+.caption__comment {
+  margin: 0 0 23px;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: $title-color;
+}
+
+// Insta Section
+
+.insta {
+  margin: 40px 0 42px;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.insta__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.insta__title {
+  @media (max-width: 768px) {
+    &--desktop {
+      display: none;
+    }
+  }
+  @media (min-width: 769px) {
+    display: none;
+  }
+}
+
+.insta__title--link {
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 22px;
+  color: $title-color;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  @media (max-width: 769px) {
+    display: none;
+  }
+}
+
+.insta__content {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+
+  &--list {
+    list-style: none;
+    padding-right: 1%;
+  }
+
+  @media (max-width: 767px) {
+    justify-content: flex-start;
+  }
+
+  @media (max-width: 767px) {
+    &--list:not(:nth-child(1)) {
+      display: none;
+    }
+  }
+  @media (min-width: 768px) {
+    &--list:last-child {
+      display: none;
+    }
+  }
+  @media (min-width: 1200px) {
+    &--list:last-child {
+      display: flex;
+    }
+  }
+}
+
+.insta__item {
+  // margin-left: 15px;
+  width: 301px;
+
+  @media (min-width: 768px) {
+    width: 250px;
+  }
+  @media (min-width: 1200px) {
+    width: 285px;
+  }
+}
